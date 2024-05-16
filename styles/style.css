@@ -76,28 +76,24 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 16px;
   width: 711px;
-  height: 479px;
 }
 
 .result__video-container {
   position: relative;
-  width: 699px;
-  height: 388px;
 }
 
 .result__video {
-  width: inherit;
-  height: inherit;
+  width: 711px;
+  height: 386px;
   object-fit: cover;
-  zoom: 122%;
 }
 
 
 .search-form {
   display: flex;
-  gap: 39px;
+  gap: 40px;
 }
 
 .search-form__fieldset {
@@ -203,7 +199,6 @@ ol {
 
 .content__details {
   width: 399px;
-  height: 550px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -212,13 +207,6 @@ ol {
 
 .content__accent {
   color: #545050;
-}
-
-.dash {
-  color: #545050;
-  position: absolute;
-  top: 16.7%;
-  transform: translateY(50%);
 }
 
 .content__list {
@@ -250,8 +238,7 @@ ol {
   background: #545050;
 }
 
-.content__card-link:hover .content__video-card-title,
-.content__card-link:hover .content__video-card-description {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
