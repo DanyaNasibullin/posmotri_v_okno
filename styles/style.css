@@ -42,7 +42,7 @@ ol {
 .content {
   display: flex;
   align-items: end;
-  gap: 17px;
+  gap: 30px;
 }
 
 
@@ -69,15 +69,10 @@ ol {
   color: rgba(255, 255, 255, 0.7);
 }
 
-::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .result {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 711px;
 }
 
 .result__video-container {
@@ -99,10 +94,11 @@ ol {
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
   width: -moz-fit-content;
   width: fit-content;
   border: none;
+  padding-top: 3px;
 }
 
 .search-form__fieldset-title {
@@ -112,9 +108,10 @@ ol {
 
 .search-form__label {
   display: flex;
-  gap: 4px;
+  gap: 5px;
   align-items: stretch;
   cursor: pointer;
+  outline: none;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -129,9 +126,12 @@ ol {
 .search-form__textfield {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  width: 222px;
+  font-weight: 400;
+  text-align: start;
+  width: 225px;
   color: #fff;
   background: none;
+  outline: none;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -163,8 +163,8 @@ ol {
 }
 
 .button {
-  margin-top: 19px;
-  width: 189px;
+  margin: 21px auto 2px;
+  width: 194px;
   height: 34px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -201,10 +201,13 @@ ol {
   width: 399px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
   justify-content: start;
 }
 
+.content__details .title {
+  margin-top: 4px;
+}
 .content__accent {
   color: #545050;
 }
@@ -215,8 +218,9 @@ ol {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  align-self: baseline;
+  gap: 30px;
+  padding-left: 2px;
+  align-self: flex-start;
 }
 
 .content__card-link {
